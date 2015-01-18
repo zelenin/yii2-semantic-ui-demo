@@ -43,11 +43,6 @@ echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
             'active' => $controller->getUniqueId() == 'demo/collections'
         ],
         [
-            'title' => 'Views',
-            'content' => '',
-            'active' => $controller->getUniqueId() == 'demo/views'
-        ],
-        [
             'title' => 'Modules',
             'content' => '',
             'active' => $controller->getUniqueId() == 'demo/modules'

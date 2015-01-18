@@ -17,6 +17,7 @@
         "issues": "https://github.com/zelenin/yii2-semantic-ui-demo/issues",
         "source": "https://github.com/zelenin/yii2-semantic-ui-demo"
     },
+    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "~2.0@stable",
         "zelenin/yii2-semantic-ui": "*"
