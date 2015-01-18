@@ -2,10 +2,9 @@
 
 return [
     'id' => 'yii2-semantic-ui-demo',
-    'name' => 'yii2 app',
+    'name' => 'yii2 semantic-ui demo',
     'basePath' => dirname(__DIR__),
     'layoutPath' => '@app/modules/demo/views/layouts',
-    'timeZone' => 'UTC',
     'defaultRoute' => 'demo/default/index',
     'modules' => [
         'demo' => '\app\modules\demo\Module'
@@ -18,9 +17,9 @@ return [
             'enableStrictParsing' => false,
             'rules' => [
                 '/' => 'demo/default/index',
-                '<module:[\wd-]+>' => 'demo/default/index',
-                '<module:[\wd-]+>/<action:[\wd-]+>' => 'demo/default/<action>',
-                '<module:[\wd-]+>/<controller:[\wd-]+>/<action:[\wd-]+>' => 'demo/<controller>/<action>'
+                '<module:[\w-]+>' => 'demo/default/index',
+                '<module:[\wd-]+>/<action:[\w-]+>' => 'demo/default/<action>',
+                '<module:[\w-]+>/<controller:[\w-]+>/<action:[\w-]+>' => 'demo/<controller>/<action>'
             ]
         ],
         'request' => [
