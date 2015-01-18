@@ -40,6 +40,7 @@ $this->beginPage();
         <div class="ten wide column"><?= $content ?></div>
     </div>
 
+    <?= $controller->renderPartial('@app/modules/demo/views/layouts/_ga') ?>
     <?php $this->endBody(); ?>
     </body>
     </html>
