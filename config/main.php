@@ -5,7 +5,7 @@ return [
     'name' => 'yii2 semantic-ui demo',
     'basePath' => dirname(__DIR__),
     'layoutPath' => '@app/modules/demo/views/layouts',
-    'defaultRoute' => 'demo/default/index',
+    'defaultRoute' => '/demo/elements/button',
     'modules' => [
         'demo' => '\app\modules\demo\Module'
     ],
@@ -15,11 +15,10 @@ return [
             'showScriptName' => false,
             'enablePrettyUrl' => true,
             'enableStrictParsing' => false,
+            'suffix' => '.html',
             'rules' => [
-                '/' => 'demo/default/index',
-                '<module:[\w-]+>' => 'demo/default/index',
-                '<module:[\wd-]+>/<action:[\w-]+>' => 'demo/default/<action>',
-                '<module:[\w-]+>/<controller:[\w-]+>/<action:[\w-]+>' => 'demo/<controller>/<action>'
+                ['pattern' => '', 'route' => '', 'suffix' => ''],
+                '<controller:[\w-]+>/<action:[\w-]+>' => 'demo/<controller>/<action>'
             ]
         ],
         'request' => [

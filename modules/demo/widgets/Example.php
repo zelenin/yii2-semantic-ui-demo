@@ -10,7 +10,7 @@ use yii\web\View;
 
 class Example extends Widget
 {
-    public $titleTemplate = '<div class="ui basic top attached red inverted segment"><strong>{title}</strong></div>';
+    public $titleTemplate = '<div class="ui basic top attached blue segment"><strong>{title}</strong></div>';
     public $demoTemplate = '<div class="ui attached segment">{demo}</div>';
     public $codeTemplate = '<div class="ui bottom attached secondary segment"><pre><code class="php">{code}</code></pre></div>';
 
@@ -24,9 +24,12 @@ class Example extends Widget
         HiglightJsAsset::register($view);
         $view->registerJs('hljs.initHighlightingOnLoad();', View::POS_END);
 
-        return
+        return Html::tag(
+            'div',
             strtr($this->titleTemplate, ['{title}' => $this->title]) .
             strtr($this->demoTemplate, ['{demo}' => $this->demo]) .
-            strtr($this->codeTemplate, ['{code}' => Html::encode($this->code)]);
+            strtr($this->codeTemplate, ['{code}' => Html::encode($this->code)]),
+            ['class' => 'example']
+        );
     }
 }

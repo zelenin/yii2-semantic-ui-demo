@@ -35,6 +35,8 @@ $this->beginPage();
     <body>
     <?php $this->beginBody(); ?>
 
+    <?= $controller->renderPartial('@app/modules/demo/views/layouts/_topmenu') ?>
+
     <div class="ui centered padded stackable grid">
         <div class="three wide column"><?= $controller->renderPartial('@app/modules/demo/views/layouts/_menu') ?></div>
         <div class="ten wide column"><?= $content ?></div>
