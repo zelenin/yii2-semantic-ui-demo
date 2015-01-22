@@ -46,6 +46,18 @@ echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
             'title' => 'Modules',
             'content' => '',
             'active' => $controller->getUniqueId() == 'demo/modules'
-        ]
+        ],
+        [
+            'title' => 'Yii2 widgets',
+            'content' => \Zelenin\yii\SemanticUI\collections\Menu::widget([
+                'options' => $menuOptions,
+                'items' => [
+                    ['label' => 'ActiveForm', 'url' => ['/demo/yii2-widgets/active-form']],
+                    ['label' => 'DetailView', 'url' => ['/demo/yii2-widgets/detail-view']],
+                    ['label' => 'GridView', 'url' => ['/demo/yii2-widgets/grid-view']]
+                ]
+            ]),
+            'active' => $controller->getUniqueId() == 'demo/yii2-widgets'
+        ],
     ]
 ]);
