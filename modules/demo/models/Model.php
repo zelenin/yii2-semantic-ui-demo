@@ -19,11 +19,22 @@ class Model extends ActiveRecord
         ];
     }
 
-    public function getTotalList()
+    public static function getTotalList()
     {
         $array = [];
         for ($i = 1; $i <= 50; $i++) {
-            $array[$i] = 'Total ' . $i;
+            $name = 'Total ' . $i;
+            $array[$name] = $name;
+        }
+        return $array;
+    }
+
+    public static function getTitleList()
+    {
+        $array = [];
+        for ($i = 1; $i <= 50; $i++) {
+            $name = 'Title ' . $i;
+            $array[$name] = $name;
         }
         return $array;
     }

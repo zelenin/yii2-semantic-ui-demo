@@ -2,9 +2,9 @@
 use Zelenin\yii\SemanticUI\Elements;
 
 $this->title = 'Flag';
-?>
 
-<?= Elements::header('Flag') ?>
+echo Elements::header($this->title);
+?>
 
 <?= \app\modules\demo\widgets\Example::widget([
     'demo' => Elements::flag('us'),

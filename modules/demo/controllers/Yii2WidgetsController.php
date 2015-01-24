@@ -3,7 +3,8 @@
 namespace app\modules\demo\controllers;
 
 use app\modules\demo\models\Model;
-use yii\data\ArrayDataProvider;
+use app\modules\demo\models\search\ModelSearch;
+use Yii;
 use yii\web\Controller;
 
 class Yii2WidgetsController extends Controller
@@ -32,25 +33,12 @@ class Yii2WidgetsController extends Controller
 
     public function actionGridView()
     {
-        $array = [];
-        for ($i = 1; $i <= 50; $i++) {
-            $model = new Model();
-            $model->setAttributes([
-                'id' => $i,
-                'name' => 'Title ' . $i,
-                'total' => rand(10, 99)
-            ]);
-            $array[] = $model;
-        }
-        $dataProvider = new ArrayDataProvider([
-            'allModels' => $array,
-            'sort' => [
-                'attributes' => ['id', 'name', 'total'],
-            ],
-            'pagination' => [
-                'pageSize' => 10
-            ]
+        $searchModel = new ModelSearch();
+        $dataProvider = $searchModel->search(Yii::$app->getRequest()->get());
+
+        return $this->render('grid-view', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider
         ]);
-        return $this->render('grid-view', ['dataProvider' => $dataProvider]);
     }
 }

@@ -3,9 +3,8 @@ use yii\helpers\Html;
 use Zelenin\yii\SemanticUI\Elements;
 
 $this->title = 'Divider';
+echo Elements::header($this->title);
 ?>
-
-<?= Elements::header('Divider') ?>
 
 <?= \app\modules\demo\widgets\Example::widget([
     'demo' => Elements::divider(),
@@ -14,8 +13,6 @@ use Zelenin\yii\SemanticUI\Elements;
 echo Elements::divider();
 PHP
 ]) ?>
-
-<?= Elements::header('Vertical Divider') ?>
 
 <?= \app\modules\demo\widgets\Example::widget([
     'demo' => '
