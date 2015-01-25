@@ -21,14 +21,14 @@ PHP
         ' . Elements::segment('
             <div class="field">
                 <label>Username</label>
-                ' . Elements::inputWrapper(
+                ' . Elements::input(
                 Html::input('text', null, null, ['placeholder' => 'Username']) . Elements::icon('user'),
                 ['class' => 'left icon']
             ) . '
             </div>
             <div class="field">
                 <label>Password</label>
-                ' . Elements::inputWrapper(
+                ' . Elements::input(
                 Html::input('password', null, null) . Elements::icon('lock'),
                 ['class' => 'left icon']
             ) . '
@@ -46,14 +46,14 @@ echo '<div class="ui two column middle aligned relaxed fitted stackable grid">
         ' . Elements::segment('
             <div class="field">
                 <label>Username</label>
-                ' . Elements::inputWrapper(
+                ' . Elements::input(
                     Html::input('text', null, null,['placeholder' => 'Username']) . Elements::icon('user'),
                     ['class' => 'left icon']
                 ) . '
             </div>
             <div class="field">
                 <label>Password</label>
-                ' . Elements::inputWrapper(
+                ' . Elements::input(
                         Html::input('password', null, null) . Elements::icon('lock'),
                         ['class' => 'left icon']
                 ) . '
@@ -72,7 +72,7 @@ PHP
 
 <?= \app\modules\demo\widgets\Example::widget([
     'demo' => Elements::segment(
-        Elements::inputWrapper(
+        Elements::input(
             Elements::icon('search') .
             Html::input('text', null, null, ['placeholder' => 'Order #']) .
             Elements::button('Search', ['class' => 'blue submit']),
@@ -86,7 +86,7 @@ PHP
 use yii\helpers\Html;
 use Zelenin\yii\SemanticUI\Elements;
 echo Elements::segment(
-        Elements::inputWrapper(
+        Elements::input(
             Elements::icon('search') .
             Html::input('text', null, null, ['placeholder' => 'Order #']) .
             Elements::button('Search', ['class' => 'blue submit']),
