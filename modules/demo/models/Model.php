@@ -32,7 +32,7 @@ class Model extends ActiveRecord
     public static function getTitleList()
     {
         $array = [];
-        for ($i = 1; $i <= 2; $i++) {
+        for ($i = 1; $i <= 50; $i++) {
             $name = 'Title ' . $i;
             $array[$name] = $name;
         }

@@ -14,7 +14,7 @@ $this->title = 'GridView';
 
 echo Elements::header($this->title);
 
-//$pjax = Pjax::begin();
+$pjax = Pjax::begin();
 
 echo GridView::widget([
     'filterModel' => $searchModel,
@@ -37,4 +37,4 @@ echo GridView::widget([
     ]
 ]);
 
-//$pjax::end();
+$pjax::end();
