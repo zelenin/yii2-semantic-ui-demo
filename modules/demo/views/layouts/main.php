@@ -39,7 +39,7 @@ $this->beginPage();
 
     <div class="ui centered padded stackable grid">
         <div class="three wide column"><?= $controller->renderPartial('@app/modules/demo/views/layouts/_menu') ?></div>
-        <div class="ten wide column"><?= $content ?></div>
+        <div class="ten wide column" id="content"><?= $content ?></div>
     </div>
 
     <?= $controller->renderPartial('@app/modules/demo/views/layouts/_ga') ?>

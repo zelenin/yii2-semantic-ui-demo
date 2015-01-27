@@ -22,6 +22,9 @@ echo GridView::widget([
     'tableOptions' => ['class' => 'ui celled striped blue table'],
     'columns' => [
         [
+            'class' => 'Zelenin\yii\SemanticUI\CheckboxColumn',
+        ],
+        [
             'attribute' => 'id'
         ],
         [

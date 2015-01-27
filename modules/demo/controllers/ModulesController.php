@@ -16,11 +16,6 @@ class ModulesController extends Controller
         return $this->render('checkbox');
     }
 
-    public function actionDimmer()
-    {
-        return $this->render('dimmer');
-    }
-
     public function actionDropdown()
     {
         return $this->render('dropdown');

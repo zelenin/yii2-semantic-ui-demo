@@ -2,6 +2,7 @@
 
 /** @var Controller $controller */
 use yii\web\Controller;
+use Zelenin\yii\SemanticUI\modules\Sticky;
 
 $controller = $this->context;
 $module = $controller->module;
@@ -9,6 +10,13 @@ $module = $controller->module;
 $menuOptions = [
     'class' => 'ui secondary vertical small fluid menu'
 ];
+
+Sticky::begin([
+    'clientOptions' => [
+        'context' => '#content',
+
+    ]
+]);
 
 echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
     'fluid' => true,
@@ -56,7 +64,6 @@ echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
                 'items' => [
                     ['label' => 'Accordion', 'url' => ['/demo/modules/accordion']],
                     ['label' => 'Checkbox', 'url' => ['/demo/modules/checkbox']],
-                    ['label' => 'Dimmer', 'url' => ['/demo/modules/dimmer']],
                     ['label' => 'Dropdown', 'url' => ['/demo/modules/dropdown']],
                     ['label' => 'Modal', 'url' => ['/demo/modules/modal']],
                     ['label' => 'Nag', 'url' => ['/demo/modules/nag']],
@@ -88,3 +95,5 @@ echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
         ],
     ]
 ]);
+
+Sticky::end();
