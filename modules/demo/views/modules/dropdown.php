@@ -69,18 +69,26 @@ PHP
         ]
     ]),
     'code' => <<<PHP
-use Zelenin\yii\SemanticUI\modules\Select;
-echo Select::widget([
+use Zelenin\yii\SemanticUI\modules\Dropdown;
+echo Dropdown::widget([
     'name' => 'select1',
     'selection' => 3,
     'search' => false,
     'fluid' => true,
     'disabled' => false,
+    'defaultText' => 'Select an option',
     'items' => [
-        '' => '---',
-        '1' => 'Label 1',
-        '2' => 'Label 2',
-        '3' => 'Label 3'
+        '',
+        'Categories' => [
+            '1' => 'Clothing',
+            '2' => 'Home Goods',
+            '3' => 'Bedroom'
+        ],
+        null,
+        'Order' => [
+            '4' => 'Status',
+            '5' => 'Cancellations'
+        ]
     ]
 ]);
 PHP
