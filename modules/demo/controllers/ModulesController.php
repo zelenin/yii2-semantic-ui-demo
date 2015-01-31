@@ -26,16 +26,6 @@ class ModulesController extends Controller
         return $this->render('modal');
     }
 
-    public function actionNag()
-    {
-        return $this->render('nag');
-    }
-
-    public function actionPopup()
-    {
-        return $this->render('popup');
-    }
-
     public function actionProgress()
     {
         return $this->render('progress');
@@ -69,15 +59,5 @@ class ModulesController extends Controller
     public function actionTab()
     {
         return $this->render('tab');
-    }
-
-    public function actionTransition()
-    {
-        return $this->render('transition');
-    }
-
-    public function actionVideo()
-    {
-        return $this->render('video');
     }
 }

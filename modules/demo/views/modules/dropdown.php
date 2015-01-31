@@ -48,7 +48,7 @@ PHP
 
 <?= Example::widget([
     'demo' => Dropdown::widget([
-        'name' => 'select1',
+        'name' => 'select2',
         'selection' => 3,
         'search' => false,
         'fluid' => true,
@@ -71,7 +71,7 @@ PHP
     'code' => <<<PHP
 use Zelenin\yii\SemanticUI\modules\Dropdown;
 echo Dropdown::widget([
-    'name' => 'select1',
+    'name' => 'select2',
     'selection' => 3,
     'search' => false,
     'fluid' => true,

@@ -66,17 +66,13 @@ echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
                     ['label' => 'Checkbox', 'url' => ['/demo/modules/checkbox']],
                     ['label' => 'Dropdown', 'url' => ['/demo/modules/dropdown']],
                     ['label' => 'Modal', 'url' => ['/demo/modules/modal']],
-                    ['label' => 'Nag', 'url' => ['/demo/modules/nag']],
-                    ['label' => 'Popup', 'url' => ['/demo/modules/popup']],
                     ['label' => 'Progress', 'url' => ['/demo/modules/progress']],
                     ['label' => 'Rating', 'url' => ['/demo/modules/rating']],
                     ['label' => 'Search', 'url' => ['/demo/modules/search']],
                     ['label' => 'Shape', 'url' => ['/demo/modules/shape']],
                     ['label' => 'Sidebar', 'url' => ['/demo/modules/sidebar']],
                     ['label' => 'Sticky', 'url' => ['/demo/modules/sticky']],
-                    ['label' => 'Tab', 'url' => ['/demo/modules/tab']],
-                    ['label' => 'Transition', 'url' => ['/demo/modules/transition']],
-                    ['label' => 'Video', 'url' => ['/demo/modules/video']]
+                    ['label' => 'Tab', 'url' => ['/demo/modules/tab']]
                 ]
             ]),
             'active' => $controller->getUniqueId() == 'demo/modules'
