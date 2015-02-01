@@ -8,18 +8,18 @@ $controller = $this->context;
 $module = $controller->module;
 
 $menuOptions = [
-    'class' => 'ui secondary vertical small fluid menu'
+    'class' => 'ui secondary vertical small fluid inverted menu'
 ];
 
 Sticky::begin([
     'clientOptions' => [
-        'context' => '#content',
-
+        'context' => '#content'
     ]
 ]);
 
 echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
     'fluid' => true,
+    'inverted' => true,
     'contentOptions' => ['encode' => false],
     'items' => [
         [
