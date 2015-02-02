@@ -29,7 +29,7 @@ Elements::header($this->title);
         ]
     ]),
     'code' => <<<PHP
-use Zelenin\yii\SemanticUI\modules\Rating;
+use Zelenin\yii\SemanticUI\modules\Shape;
 echo Shape::widget([
     'sides' => [
         [
@@ -63,7 +63,7 @@ PHP
             ]
         ]) . Elements::button('Toggle', ['class' => 'left floated', 'id' => ($buttonId = 'toggle-button')]) . $this->registerJs('jQuery("#' . $buttonId . '").click(function() { jQuery("#' . $shapeId . '").shape("flip up"); });'),
     'code' => <<<'PHP'
-use Zelenin\yii\SemanticUI\modules\Rating;
+use Zelenin\yii\SemanticUI\modules\Shape;
 echo Shape::TYPE_CUBE,
     'sides' => [
         [
