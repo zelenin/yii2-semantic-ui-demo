@@ -5,12 +5,13 @@
 
 use app\modules\demo\models\Model;
 use Zelenin\yii\SemanticUI\Elements;
+use Zelenin\yii\SemanticUI\widgets\DetailView;
 
 $this->title = 'DetailView';
 
 echo Elements::header($this->title);
 
-echo \Zelenin\yii\SemanticUI\DetailView::widget([
+echo DetailView::widget([
     'model' => $model,
     'attributes' => [
         'id',
