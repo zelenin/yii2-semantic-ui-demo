@@ -8,7 +8,7 @@ use yii\web\View;
 use Zelenin\yii\SemanticUI\collections\Breadcrumb;
 use Zelenin\yii\SemanticUI\Elements;
 
-$this->title = 'Accordion';
+$this->title = 'Breadcrumb';
 
 Elements::header($this->title);
 ?>
