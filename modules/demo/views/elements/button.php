@@ -69,6 +69,6 @@ PHP
     'demo' => Elements::button('Save', ['class' => 'small']),
     'code' => <<<PHP
 use Zelenin\yii\SemanticUI\Elements;
-echo Elements::button('Save', ['class' => 'loading']);
+echo Elements::button('Save', ['class' => 'small']);
 PHP
 ]) ?>
