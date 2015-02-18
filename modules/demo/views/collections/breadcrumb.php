@@ -16,7 +16,7 @@ Elements::header($this->title);
 <?= Example::widget([
     'demo' => Breadcrumb::widget([
         'divider' => Breadcrumb::DIVIDER_CHEVRON,
-        'items' => [
+        'links' => [
             [
                 'label' => 'Menu',
                 'url' => ['/demo/collections/menu']
@@ -34,7 +34,7 @@ Elements::header($this->title);
 use Zelenin\yii\SemanticUI\modules\Breadcrumb;
 echo Breadcrumb::widget([
     'divider' => Breadcrumb::DIVIDER_CHEVRON,
-    'items' => [
+    'links' => [
         [
             'label' => 'Menu',
             'url' => ['/demo/collections/menu']

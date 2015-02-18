@@ -1,5 +1,7 @@
 <?php
 
+Yii::$container->set(\yii\grid\GridView::className(),\Zelenin\yii\SemanticUI\widgets\GridView::className());
+
 return [
     'id' => 'yii2-semantic-ui-demo',
     'name' => 'yii2 semantic-ui demo',
