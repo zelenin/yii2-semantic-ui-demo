@@ -64,7 +64,7 @@ Elements::header($this->title);
         ]
     ]),
     'code' => <<<PHP
-use Zelenin\yii\SemanticUI\modules\Menu;
+use Zelenin\yii\SemanticUI\collections\Menu;
 echo Menu::widget([
     'items' => [
         [
@@ -180,7 +180,7 @@ PHP
         ]
     ]),
     'code' => <<<PHP
-use Zelenin\yii\SemanticUI\modules\Menu;
+use Zelenin\yii\SemanticUI\collections\Menu;
 echo Menu::widget([
     'vertical' => true,
     'items' => [
@@ -266,7 +266,7 @@ PHP
         ]
     ]),
     'code' => <<<PHP
-use Zelenin\yii\SemanticUI\modules\Menu;
+use Zelenin\yii\SemanticUI\collections\Menu;
 echo Menu::widget([
     'text' => true,
     'items' => [
