@@ -43,7 +43,7 @@ echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
                     ['label' => 'Step', 'url' => ['/demo/elements/step']]
                 ]
             ]),
-            'active' => $controller->getUniqueId() == 'demo/elements'
+            'active' => $controller->getUniqueId() === 'demo/elements'
         ],
         [
             'title' => 'Collections',
@@ -55,7 +55,7 @@ echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
                     ['label' => 'Message', 'url' => ['/demo/collections/message']]
                 ]
             ]),
-            'active' => $controller->getUniqueId() == 'demo/collections'
+            'active' => $controller->getUniqueId() === 'demo/collections'
         ],
         [
             'title' => 'Modules',
@@ -65,6 +65,7 @@ echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
                     ['label' => 'Accordion', 'url' => ['/demo/modules/accordion']],
                     ['label' => 'Checkbox', 'url' => ['/demo/modules/checkbox']],
                     ['label' => 'Dropdown', 'url' => ['/demo/modules/dropdown']],
+                    ['label' => 'Embed', 'url' => ['/demo/modules/embed']],
                     ['label' => 'Modal', 'url' => ['/demo/modules/modal']],
                     ['label' => 'Progress', 'url' => ['/demo/modules/progress']],
                     ['label' => 'Rating', 'url' => ['/demo/modules/rating']],
@@ -75,7 +76,7 @@ echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
                     ['label' => 'Tab', 'url' => ['/demo/modules/tab']]
                 ]
             ]),
-            'active' => $controller->getUniqueId() == 'demo/modules'
+            'active' => $controller->getUniqueId() === 'demo/modules'
         ],
         [
             'title' => 'Yii2 widgets',
@@ -87,7 +88,7 @@ echo \Zelenin\yii\SemanticUI\modules\Accordion::widget([
                     ['label' => 'GridView', 'url' => ['/demo/yii2-widgets/grid-view']]
                 ]
             ]),
-            'active' => $controller->getUniqueId() == 'demo/yii2-widgets'
+            'active' => $controller->getUniqueId() === 'demo/yii2-widgets'
         ],
     ]
 ]);

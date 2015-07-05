@@ -126,15 +126,25 @@ PHP
 ]) ?>
 
 <?= Example::widget([
-    'demo' => Elements::segment(Checkbox::widget([
-        'name' => 'checkboxName4',
-        'fitted' => true
-    ]), ['class' => 'left floated']),
+    'demo' => Html::tag('div', CheckboxList::widget([
+        'items' => [
+            'value1' => 'Label1',
+            'value2' => 'Label2',
+            'value3' => 'Label3',
+            'value4' => 'Label4'
+        ],
+        'name' => 'checkboxListName1'
+    ]), ['class' => 'ui form']),
     'code' => <<<PHP
-use Zelenin\yii\SemanticUI\modules\Checkbox;
-echo Elements::segment(Checkbox::widget([
-    'name' => 'checkboxName4',
-    'fitted' => true
-]), ['class' => 'left floated']);
+use Zelenin\yii\SemanticUI\modules\CheckboxList;
+echo Html::tag('div', CheckboxList::widget([
+        'items' => [
+            'value1' => 'Label1',
+            'value2' => 'Label2',
+            'value3' => 'Label3',
+            'value4' => 'Label4'
+        ],
+        'name' => 'checkboxListName1'
+    ]), ['class' => 'ui form']);
 PHP
 ]) ?>

@@ -21,6 +21,11 @@ class ModulesController extends Controller
         return $this->render('dropdown');
     }
 
+    public function actionEmbed()
+    {
+        return $this->render('embed');
+    }
+
     public function actionModal()
     {
         return $this->render('modal');

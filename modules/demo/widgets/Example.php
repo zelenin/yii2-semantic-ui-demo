@@ -11,7 +11,7 @@ use yii\web\View;
 class Example extends Widget
 {
     public $titleTemplate = '<div class="ui basic top attached blue segment"><strong>{title}</strong></div>';
-    public $demoTemplate = '<div class="ui attached segment">{demo}</div>';
+    public $demoTemplate = '<div class="ui attached clearing segment">{demo}</div>';
     public $codeTemplate = '<div class="ui bottom attached secondary segment"><pre><code class="php">{code}</code></pre></div>';
 
     public $title = 'Example';

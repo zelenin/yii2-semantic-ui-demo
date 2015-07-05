@@ -61,10 +61,14 @@ PHP
                     'content' => Html::tag('div', Html::tag('div', 'Side 3', ['class' => 'center']), ['class' => 'content'])
                 ]
             ]
-        ]) . Elements::button('Toggle', ['class' => 'left floated', 'id' => ($buttonId = 'toggle-button')]) . $this->registerJs('jQuery("#' . $buttonId . '").click(function() { jQuery("#' . $shapeId . '").shape("flip up"); });'),
+        ]) .
+        Elements::button('Toggle', ['class' => 'left floated', 'id' => ($buttonId = 'toggle-button')]) .
+        $this->registerJs('jQuery("#' . $buttonId . '").click(function() { jQuery("#' . $shapeId . '").shape("flip up"); });'),
     'code' => <<<'PHP'
 use Zelenin\yii\SemanticUI\modules\Shape;
-echo Shape::TYPE_CUBE,
+echo Shape::widget([
+    'id' => ($shapeId = 'shape-id'),
+    'type' => Shape::TYPE_CUBE,
     'sides' => [
         [
             'content' => Html::tag('div', Html::tag('div', 'Side 1', ['class' => 'center']), ['class' => 'content'])
@@ -76,6 +80,8 @@ echo Shape::TYPE_CUBE,
             'content' => Html::tag('div', Html::tag('div', 'Side 3', ['class' => 'center']), ['class' => 'content'])
         ]
     ]
-]) . Elements::button('Toggle', ['class' => 'left floated', 'id' => ($buttonId = 'toggle-button')]) . $this->registerJs('jQuery("#' . $buttonId . '").click(function() { jQuery("#' . $shapeId . '").shape("flip up"); });');
+]) .
+Elements::button('Toggle', ['class' => 'left floated', 'id' => ($buttonId = 'toggle-button')]) .
+$this->registerJs('jQuery("#' . $buttonId . '").click(function() { jQuery("#' . $shapeId . '").shape("flip up"); });')
 PHP
 ]) ?>

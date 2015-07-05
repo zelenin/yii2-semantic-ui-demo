@@ -25,11 +25,11 @@ PHP
 ]) ?>
 
 <?= \app\modules\demo\widgets\Example::widget([
-    'demo' => Elements::button('<i class="pause icon"></i>Pause', ['class' => 'labeled icon']) . Elements::button('<i class="right arrow icon"></i>Next', ['class' => 'right labeled icon']),
+    'demo' => Elements::button(Elements::icon('pause') . 'Pause', ['class' => 'labeled icon']) . Elements::button(Elements::icon('right arrow') . 'Next', ['class' => 'right labeled icon']),
     'code' => <<<PHP
 use Zelenin\yii\SemanticUI\Elements;
-echo Elements::button('<i class="pause icon"></i>Pause', ['class' => 'labeled icon']);
-echo Elements::button('<i class="right arrow icon"></i>Next', ['class' => 'right labeled icon']);
+echo Elements::button(Elements::icon('pause') . 'Pause', ['class' => 'labeled icon']);
+echo Elements::button(Elements::icon('right arrow') . 'Next', ['class' => 'right labeled icon']);
 PHP
 ]) ?>
 

@@ -22,7 +22,7 @@ Elements::header($this->title);
         'fluid' => true,
         'disabled' => false,
         'items' => [
-            '' => '---',
+            '' => '',
             '1' => 'Label 1',
             '2' => 'Label 2',
             '3' => 'Label 3'
@@ -89,6 +89,40 @@ echo Dropdown::widget([
             '4' => 'Status',
             '5' => 'Cancellations'
         ]
+    ]
+]);
+PHP
+]) ?>
+
+<?= Example::widget([
+    'demo' => Select::widget([
+        'name' => 'select3',
+        'selection' => 3,
+        'search' => false,
+        'fluid' => true,
+        'disabled' => false,
+        'multiple' => true,
+        'items' => [
+            '' => '---',
+            '1' => 'Label 1',
+            '2' => 'Label 2',
+            '3' => 'Label 3'
+        ]
+    ]),
+    'code' => <<<PHP
+use Zelenin\yii\SemanticUI\modules\Select;
+echo Select::widget([
+    'name' => 'select3',
+    'selection' => 3,
+    'search' => false,
+    'fluid' => true,
+    'disabled' => false,
+    'multiple' => true,
+    'items' => [
+        '' => '---',
+        '1' => 'Label 1',
+        '2' => 'Label 2',
+        '3' => 'Label 3'
     ]
 ]);
 PHP
