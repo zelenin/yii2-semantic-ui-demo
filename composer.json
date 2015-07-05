@@ -19,7 +19,7 @@
     },
     "require": {
         "yiisoft/yii2": "~2",
-        "zelenin/yii2-semantic-ui": "dev-master"
+        "zelenin/yii2-semantic-ui": "~2"
     },
     "config": {
         "preferred-install": "dist",
