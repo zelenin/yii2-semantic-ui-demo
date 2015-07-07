@@ -20,14 +20,14 @@ Elements::header($this->title);
     'actions' => Elements::button('Nope', ['class' => 'black']) . Elements::button('Yep' . Elements::icon('checkmark'), ['class' => 'positive right labeled icon'])
 ]); ?>
 <?= Elements::image('/images/image.png', ['class' => 'medium']) ?>
-    <div class="description">
-        <?= Elements::header('We\'ve auto-chosen a profile image for you') ?>
-        <p>We've grabbed the following image from the <a target="_blank" href="https://www.gravatar.com">gravatar</a>
-            image
-            associated with your registered e-mail address.</p>
+<div class="description">
+    <?= Elements::header('We\'ve auto-chosen a profile image for you') ?>
+    <p>We've grabbed the following image from the <a target="_blank" href="https://www.gravatar.com">gravatar</a>
+        image
+        associated with your registered e-mail address.</p>
 
-        <p>Is it okay to use this photo?</p>
-    </div>
+    <p>Is it okay to use this photo?</p>
+</div>
 <?php $modal::end(); ?>
 
 <?= Example::widget([
