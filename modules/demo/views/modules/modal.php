@@ -6,15 +6,16 @@
 use app\modules\demo\widgets\Example;
 use yii\web\View;
 use Zelenin\yii\SemanticUI\Elements;
+use Zelenin\yii\SemanticUI\helpers\Size;
 use Zelenin\yii\SemanticUI\modules\Modal;
 
-$this->title = 'Accordion';
+$this->title = 'Modal';
 
 Elements::header($this->title);
 ?>
 
 <?php $modal = Modal::begin([
-    'size' => Modal::SIZE_LARGE,
+    'size' => Size::LARGE,
     'header' => 'Profile Picture',
     'actions' => Elements::button('Nope', ['class' => 'black']) . Elements::button('Yep' . Elements::icon('checkmark'), ['class' => 'positive right labeled icon'])
 ]); ?>
@@ -33,7 +34,7 @@ Elements::header($this->title);
     'demo' => $modal->renderToggleButton('Show'),
     'code' => <<<'PHP'
 <?php $modal = Modal::begin([
-    'size' => Modal::SIZE_LARGE,
+    'size' => Size::LARGE,
     'header' => 'Profile Picture',
     'actions' => Elements::button('Nope', ['class' => 'black']) . Elements::button('Yep' . Elements::icon('checkmark'), ['class' => 'positive right labeled icon'])
 ]); ?>
