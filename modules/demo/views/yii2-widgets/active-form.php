@@ -22,6 +22,9 @@ Elements::header($this->title);
     <?= $form->field($model, 'name')->textInput(['maxlength' => 255]) ?>
 </div>
 <div class="one field">
+    <?= $form->field($model, 'name')->checkbox()->label(false) ?>
+</div>
+<div class="one field">
     <?= $form->field($model, 'total')->dropDownList($model->getTotalList()) ?>
 </div>
 
