@@ -80,6 +80,7 @@ echo Menu::widget([
             'label' => 'Only label'
         ],
         [
+            'url' => ['/demo/collections/test'],
             'label' => 'Message',
             'items' => [
                 [
