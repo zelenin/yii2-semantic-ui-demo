@@ -28,7 +28,6 @@ Elements::header($this->title);
                 'label' => 'Only label'
             ],
             [
-                'url' => ['/demo/collections/menu'],
                 'label' => 'Message',
                 'items' => [
                     [
@@ -80,7 +79,6 @@ echo Menu::widget([
             'label' => 'Only label'
         ],
         [
-            'url' => ['/demo/collections/menu'],
             'label' => 'Message',
             'items' => [
                 [
