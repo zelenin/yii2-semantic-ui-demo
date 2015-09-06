@@ -28,6 +28,7 @@ Elements::header($this->title);
                 'label' => 'Only label'
             ],
             [
+                'url' => ['/demo/collections/test'],
                 'label' => 'Message',
                 'items' => [
                     [

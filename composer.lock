@@ -132,16 +132,16 @@
         },
         {
             "name": "bower-asset/semantic",
-            "version": "2.0.0",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Semantic-Org/Semantic-UI.git",
-                "reference": "36b06958e186020c91e72864542e5a194a01a289"
+                "reference": "6e27ec9dc360839081bc2533753c28a53c3a604a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Semantic-Org/Semantic-UI/zipball/36b06958e186020c91e72864542e5a194a01a289",
-                "reference": "36b06958e186020c91e72864542e5a194a01a289",
+                "url": "https://api.github.com/repos/Semantic-Org/Semantic-UI/zipball/6e27ec9dc360839081bc2533753c28a53c3a604a",
+                "reference": "6e27ec9dc360839081bc2533753c28a53c3a604a",
                 "shasum": ""
             },
             "require": {
@@ -308,16 +308,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.4",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "726867caee3f23aa7a6975c801e64b6021e14f86"
+                "reference": "f42b2eb80f61992438661b01d0d74c6738e2ff38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/726867caee3f23aa7a6975c801e64b6021e14f86",
-                "reference": "726867caee3f23aa7a6975c801e64b6021e14f86",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/f42b2eb80f61992438661b01d0d74c6738e2ff38",
+                "reference": "f42b2eb80f61992438661b01d0d74c6738e2ff38",
                 "shasum": ""
             },
             "require": {
@@ -392,7 +392,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-05-10 20:09:47"
+            "time": "2015-08-05 22:00:30"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -447,12 +447,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zelenin/yii2-semantic-ui.git",
-                "reference": "a90e2ee9e4320bd45d3fa3ba903f7a53ea1e6754"
+                "reference": "117fe3ac1cac7b80496fd806166d94d542da3d1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zelenin/yii2-semantic-ui/zipball/a90e2ee9e4320bd45d3fa3ba903f7a53ea1e6754",
-                "reference": "a90e2ee9e4320bd45d3fa3ba903f7a53ea1e6754",
+                "url": "https://api.github.com/repos/zelenin/yii2-semantic-ui/zipball/117fe3ac1cac7b80496fd806166d94d542da3d1d",
+                "reference": "117fe3ac1cac7b80496fd806166d94d542da3d1d",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +485,7 @@
                 "widgets",
                 "yii2"
             ],
-            "time": "2015-07-05 19:43:34"
+            "time": "2015-09-06 20:05:46"
         }
     ],
     "packages-dev": [],
