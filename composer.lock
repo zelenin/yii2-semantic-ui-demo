@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "52390312da02451df472ac19ad44adc3",
+    "hash": "6f8cf409e15827dbf6265465d5fb7eb0",
+    "content-hash": "463f45a7545feccb32d1d4f149f11c01",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -132,16 +133,16 @@
         },
         {
             "name": "bower-asset/semantic",
-            "version": "2.1.3",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Semantic-Org/Semantic-UI.git",
-                "reference": "6e27ec9dc360839081bc2533753c28a53c3a604a"
+                "reference": "5a07cef17e6409222a2c9acee15a2f9745bbd176"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Semantic-Org/Semantic-UI/zipball/6e27ec9dc360839081bc2533753c28a53c3a604a",
-                "reference": "6e27ec9dc360839081bc2533753c28a53c3a604a",
+                "url": "https://api.github.com/repos/Semantic-Org/Semantic-UI/zipball/5a07cef17e6409222a2c9acee15a2f9745bbd176",
+                "reference": "5a07cef17e6409222a2c9acee15a2f9745bbd176",
                 "shasum": ""
             },
             "require": {
@@ -159,7 +160,7 @@
                 ]
             },
             "license": [
-                "http://semantic-ui.mit-license.org/"
+                "MIT"
             ],
             "description": "Semantic empowers designers and developers by creating a shared vocabulary for UI.",
             "keywords": [
@@ -171,16 +172,16 @@
         },
         {
             "name": "bower-asset/yii2-pjax",
-            "version": "v2.0.4",
+            "version": "v2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/jquery-pjax.git",
-                "reference": "3f20897307cca046fca5323b318475ae9dac0ca0"
+                "reference": "6818718408086db6bdcf33649cecb86b6b4f9b67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/3f20897307cca046fca5323b318475ae9dac0ca0",
-                "reference": "3f20897307cca046fca5323b318475ae9dac0ca0",
+                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/6818718408086db6bdcf33649cecb86b6b4f9b67",
+                "reference": "6818718408086db6bdcf33649cecb86b6b4f9b67",
                 "shasum": ""
             },
             "require": {
@@ -447,12 +448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zelenin/yii2-semantic-ui.git",
-                "reference": "117fe3ac1cac7b80496fd806166d94d542da3d1d"
+                "reference": "f3fb77fa896fcf409ba57999b9af77659f58998f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zelenin/yii2-semantic-ui/zipball/117fe3ac1cac7b80496fd806166d94d542da3d1d",
-                "reference": "117fe3ac1cac7b80496fd806166d94d542da3d1d",
+                "url": "https://api.github.com/repos/zelenin/yii2-semantic-ui/zipball/f3fb77fa896fcf409ba57999b9af77659f58998f",
+                "reference": "f3fb77fa896fcf409ba57999b9af77659f58998f",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +486,7 @@
                 "widgets",
                 "yii2"
             ],
-            "time": "2015-09-06 20:05:46"
+            "time": "2015-09-06 21:01:14"
         }
     ],
     "packages-dev": [],

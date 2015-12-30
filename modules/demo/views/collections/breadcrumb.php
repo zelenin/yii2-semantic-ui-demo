@@ -31,7 +31,7 @@ Elements::header($this->title);
         ]
     ]),
     'code' => <<<PHP
-use Zelenin\yii\SemanticUI\modules\Breadcrumb;
+use Zelenin\yii\SemanticUI\collections\Breadcrumb;
 echo Breadcrumb::widget([
     'divider' => Breadcrumb::DIVIDER_CHEVRON,
     'links' => [

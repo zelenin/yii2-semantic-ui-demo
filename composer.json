@@ -1,7 +1,9 @@
 {
     "name": "zelenin/yii2-semantic-ui-demo",
     "type": "project",
-    "keywords": ["yii2"],
+    "keywords": [
+        "yii2"
+    ],
     "homepage": "https://github.com/zelenin/yii2-semantic-ui-demo",
     "license": "MIT",
     "authors": [
@@ -17,7 +19,7 @@
         "source": "https://github.com/zelenin/yii2-semantic-ui-demo"
     },
     "require": {
-        "yiisoft/yii2": "~2",
+        "yiisoft/yii2": "~2.0",
         "zelenin/yii2-semantic-ui": "dev-master"
     },
     "config": {
@@ -25,8 +27,12 @@
         "process-timeout": 1800
     },
     "scripts": {
-        "post-install-cmd": ["yii\\composer\\Installer::postCreateProject"],
-        "post-update-cmd": ["yii\\composer\\Installer::postCreateProject"]
+        "post-install-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ],
+        "post-update-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ]
     },
     "extra": {
         "yii\\composer\\Installer::postCreateProject": {
@@ -37,7 +43,9 @@
                 }
             ]
         },
-        "generateCookieValidationKey": ["config/web.php"],
+        "generateCookieValidationKey": [
+            "config/web.php"
+        ],
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
